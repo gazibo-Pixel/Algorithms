@@ -12,12 +12,15 @@ def sorting(A):
             print(f'A[i] is {A[i]}')
             print('*'*18)
             i-=1
+            print('Before A[i+1] = key, the list consists of ', end= '...')
+            print(A)
         A[i+1] = key
-        print('~'*18)
+        print()
+        print('~~'*18)
         print(f'The value of i at this point is {i}')
         print('Mysrious line here, iteration j= {}, A[{}+1] = {} and key = {}'.format(j, i, A[i+1], key))
         print('-_'*18)
-arr = [12, 11, 13, 5, 6]
+arr = [5, 2, 4, 6, 1, 3]
 sorting(arr)
 # print ("Sorted array is:")
 # for i in range(len(arr)):
